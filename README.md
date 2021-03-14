@@ -1,6 +1,9 @@
 # Digikala
+
 ## Telegram id | email | Working hours per week
+
 ### ierfaaan - erfan.ab9898@gmail.com - 1h
+### Fdr231 - faryaneh_derakhshani@yahoo.com -  6h
 ### blackkniiight - arkhamknight0776@gmail.com - 5h
 ### Amirkh_78 - amir.khodadady78@gmail.com - 10h
 ### imanh2016 - iman.hamidi@gmail.com - As much as needed
