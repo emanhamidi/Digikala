@@ -5,11 +5,99 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../package/swiper-bundle.min.css">
         <title>فروشگاه اینترنتی دیجی کالا</title>
     </head>
     <body dir="rtl">
         <header class="header"></header>
-        <main class="main"></main>
+        <main class="main">
+            <div class="slider">
+                <div class="slider__header">
+                    <span>
+                        کتاب چاپی
+                    </span>
+                </div>
+                <div class="slider__card__container">
+                    <div class="slider__card">
+                        <div class="slider__card--img">
+                            <img src="./assets/images/pic.png" alt="book">
+                        </div>
+                        <p class="slider__card--title">کتاب چهار اثر از فلورانس اسکاول شین </p>
+                        <p class="slider__card--description">
+                            اثر فلورانس اسکاول شین
+                        </p>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card--img">
+                            <img src="./assets/images/shazdekocholo.png" alt="book">
+                        </div>
+                        <p class="slider__card--title">کتاب شازده کوچولو </p>
+                        <p class="slider__card--description">
+                            اثر آنتوان دوسنت اگزوپری
+                        </p>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card--img">
+                            <img src="./assets/images/takhtekhab.png" alt="book">
+                        </div>
+                        <p class="slider__card--title">کتاب تخت خوابت را مرتب کن </p>
+                        <p class="slider__card--description">
+                            اثر ژنرال ویلیام اچ. مک ریون
+                        </p>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card--img">
+                            <img src="./assets/images/bishori.png" alt="book">
+                        </div>
+                        <p class="slider__card--title">کتاب بیشوری</p>
+                        <p class="slider__card--description">
+                            اثر خاویر کرمنت
+                        </p>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card--img">
+                            <img src="./assets/images/fana.png" alt="book">
+                        </div>
+                        <p class="slider__card--title">کتاب خودت را به فنا نده</p>
+                        <p class="slider__card--description">
+                            اثر گری جان بیشاپ
+                        </p>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card--img">
+                            <img src="./assets/images/fana.png" alt="book">
+                        </div>
+                        <p class="slider__card--title">کتاب خودت را به فنا نده</p>
+                        <p class="slider__card--description">
+                            اثر گری جان بیشاپ
+                        </p>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </main>
         <footer class="footer"></footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper('.slider', {
+            slidesPerView: 5,
+            spaceBetween:30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        </script>
     </body>
 </html>
