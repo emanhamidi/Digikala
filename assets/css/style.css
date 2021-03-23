@@ -259,26 +259,26 @@ a {
 }
 
 .slider-arman__container {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .slider-arman__slide {
-text-align: center;
-background: #fff;
+  text-align: center;
+  background: #fff;
 
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .product__link img {
@@ -288,12 +288,12 @@ align-items: center;
 .slider-arman__button-prev {
   margin-right: -10px;
 
-  width: 49px;
-  height: 90px;
+  width: 49px !important;
+  height: 90px !important;
   transform: translateY(-50%);
   background-color: #fff;
 
-  color: #a8a8a8;
+  color: #a8a8a8 !important;
   box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
   border-radius: 8px 0 0 8px;
 
@@ -302,12 +302,12 @@ align-items: center;
 .slider-arman__button-next {
   margin-left: -10px;
 
-  width: 49px;
-  height: 90px;
+  width: 49px !important;
+  height: 90px !important;
   transform: translateY(-50%);
   background-color: #fff;
 
-  color: #a8a8a8;
+  color: #a8a8a8 !important;
   box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
   border-radius: 8px 0 0 8px;
 }
