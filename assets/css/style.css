@@ -318,9 +318,14 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
   margin: 10px 0;
   width: 300px;
   height: 350px;
+  
+  transition: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .product:hover {
