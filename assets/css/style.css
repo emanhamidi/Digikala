@@ -206,6 +206,7 @@ a {
   flex-direction: column;
   font-family: IRYEKAN;
   margin: 10px;
+  padding: 5px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
