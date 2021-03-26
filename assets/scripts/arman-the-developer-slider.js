@@ -1,11 +1,11 @@
-var swiper = new Swiper('.swiper-container', {
+var bookOfferSwiper = new Swiper('.slider-arman__container', {
     slidesPerView: 4,
     spaceBetween: 10,
     pagination: {
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.slider-arman__button-next',
+        prevEl: '.slider-arman__button-prev',
     },
 });
