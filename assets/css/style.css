@@ -637,7 +637,7 @@ a {
 }
 
 .recommendation .swiper-button-next::after,
-.swiper-button-prev::after {
+.recommendation .swiper-button-prev::after {
   color: #252525;
 }
 
