@@ -484,7 +484,7 @@
         <div class="headline">
           <span>مهدی رحمانی</span>
         </div>
-        <div class="recommendation-swiper-container swiper-container">
+        <div class="swiper-container swiper3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
@@ -696,16 +696,16 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next swiper3-next"></div>
+        <div class="swiper-button-prev swiper3-prev"></div>
       </section>
     </div>
       <script>
-        var ReccommendationSwiper = new Swiper('.recommendation-swiper-container', {
+        var swiper3 = new Swiper('.swiper3', {
           slidesPerGroup: 5,
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper3-next',
+            prevEl: '.swiper3-prev',
           },
           breakpoints: {
           768: {
