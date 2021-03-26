@@ -636,8 +636,8 @@ a {
   font-size: 25px;
 }
 
-.recommendation .swiper-button-next,
-.swiper-button-prev {
+.recommendation .swiper-button-next::after,
+.swiper-button-prev::after {
   color: #252525;
 }
 
