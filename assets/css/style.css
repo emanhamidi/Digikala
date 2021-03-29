@@ -382,12 +382,12 @@ a {
 
 .new-price__value {
   font-family: IRYEKANBOLD;
-  font-size: 24px;
+  font-size: 16px;
   margin-left: 5px;
 }
 
 .new-price__currency {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 200;
 }
 /* End arman-the-developer css styles */
