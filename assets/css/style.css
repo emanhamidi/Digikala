@@ -331,7 +331,7 @@ a {
   align-items: center;
 
   width: 100%;
-  height: 350px;
+  height: 350px; 
   
   transition: transform;
   transition-duration: 0.5s;
