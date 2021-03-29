@@ -202,6 +202,7 @@ a {
 
 /* Start arman-the-developer css styles */
 .slider-arman {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: IRYEKAN;
@@ -392,7 +393,7 @@ a {
 .new-price__value {
   font-family: IRYEKANBOLD;
   font-size: 16px;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .new-price__currency {
