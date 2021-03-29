@@ -230,7 +230,7 @@ a {
   content: "";
   position: absolute;
   background-color: #ef5661;
-  right: 0;
+  right: 10px;
   left: -40px;
   bottom: 0;
   height: 2px;
