@@ -349,6 +349,10 @@ a {
   height: 170px;
 }
 
+.product__title {
+  margin-top: 10px;
+}
+
 .product__link {
   color: #535353;
   font-size: 11.8px;
