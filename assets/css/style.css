@@ -287,14 +287,13 @@ a {
   background-color: #fff;
   color: #000 !important;
 
-  box-shadow: -1.8px 0 6.5px 0.5px rgb(0 0 0 / 15%);
-  border-radius: 8px 0 0 8px;
+  box-shadow: -1.8px 0 6.5px 0.5px rgb(0 0 0 / 15%) !important;
+  border-radius: 8px 0 0 8px !important;
 
 }
 
 .slider-arman__button-prev::after {
   content: 'prev';
-  font-size: 25px !important;
 }
 
 .slider-arman__button-next {
@@ -317,6 +316,9 @@ a {
 
 .slider-arman__button-next::after {
   content: 'next';
+}
+
+.slider-arman__button-prev::after, .slider-arman__button-next::after {
   font-size: 25px !important;
 }
 
