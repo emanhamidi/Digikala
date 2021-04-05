@@ -323,8 +323,8 @@ a {
 }
 
 .slider-arman__container .swiper-button-disabled {
-  color: #535353;
-  box-shadow: none;
+  color: #535353 !important;
+  box-shadow: none !important;
 }
 
 .product {
