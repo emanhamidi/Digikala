@@ -12,7 +12,7 @@ html {
   box-sizing: inherit;
 }
 
-*{
+* {
   outline: none;
 }
 
@@ -74,24 +74,27 @@ a {
 /* Start Header */
 .header {
   background-color: #ffffff;
+  position: relative;
+  z-index: 3;
 }
 
 .header__row {
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   padding: 12px 0;
 }
 
 .header__right-side {
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   flex-grow: 7;
+  align-items: center;
 }
 
 .header__logo {
@@ -101,11 +104,11 @@ a {
 }
 
 .header__logo-link {
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .header__serach {
@@ -120,11 +123,62 @@ a {
   margin-right: 8px;
 }
 
+.header__serach-background::before {
+  position: absolute;
+  color: #a1a3a8;
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moztransform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 4px;
+  z-index: 5;
+}
+
+.header__serach-background {
+  position: relative;
+  width: 100%;
+}
+
 .header__serach-input {
+  position: relative;
   background-color: #f0f0f1;
   border: 0;
   width: 100%;
-  line-height: 3;
+  height: 100%;
+  padding: 14px 45px 14px 10px;
+  border-radius: 8px;
+  color: #474747;
+  font-size: 10px;
+  font-family: IRYEKAN;
+  z-index: 4;
+}
+
+.header__serach-input--is-active {
+  background-color: #ffffff;
+}
+
+.header__serach-result {
+  position: absolute;
+  min-height: 400px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  z-index: 3;
+  top: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .2);
+  display: none;
+}
+
+.header__serach-input::placeholder {
+  color: #81858b;
 }
 
 .header__serach-input:focus {
@@ -132,14 +186,36 @@ a {
 }
 
 .header__left-side {
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   flex-grow: 3;
 }
+
 /* End Header */
+
+/* Start Overlay */
+.overlay {
+  position: fixed;
+  background: rgba(74,74,74,.43);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.overlay--is-active {
+  pointer-events: fill;
+  opacity: 1;
+}
+
+/* End Overlay */
 
 /* Start Swiper */
 .container {
@@ -162,11 +238,11 @@ a {
 .recommendation .headline {
   position: relative;
   margin: 0 0 6px 33px;
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .recommendation .headline::after {
@@ -228,11 +304,11 @@ a {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -262,11 +338,11 @@ a {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-box;   
-  display: -moz-box;         
-  display: -ms-flexbox;      
-  display: -webkit-flex;     
-  display: flex;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -289,7 +365,7 @@ a {
   color: transparent;
   text-align: center;
   content: attr(alt);
-  background: #ffffff url(../files/f8c6572e.svg) no-repeat 50%;
+  background: #ffffff;
   background-size: auto;
   background-size: contain;
   width: 100%;
