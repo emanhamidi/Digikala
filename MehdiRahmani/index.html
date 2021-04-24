@@ -12,7 +12,7 @@
 
   <body>
     <!-- Start Header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__row">
           <div class="header__right-side">
@@ -21,11 +21,24 @@
                 <img class="header__logo-img" src="./static/assets/images/logo.svg" alt="دیجیکالا">
               </a>
             </div>
-            <div class="header__serach">
-              <div class="header__serach-background ion ion-ios-search">
-                <input class="header__serach-input" type="text" id="search" name="serach" placeholder="جستجو در دیجی‌کالا">
-                <div class="header__serach-result">
-                  
+            <div class="header__search">
+              <div class="header__search-background ion ion-android-search">
+                <span class="header__search-reset ion ion-android-cancel"></span>
+                <input class="header__search-input" type="text" id="search" name="search"
+                  placeholder="جستجو در دیجی‌کالا" autocomplete="off">
+                <div class="header__search-result">
+                  <ul class="header__search-list">
+                    <li class="header__search-list-item">
+                      <a href="#">
+                        <span class="header__search-list-icon ion ion-android-search">
+                        </span>
+                        <span class="header__search-list-text">
+                          همه کالا‌های برند
+                        </span>
+                        <span class="header__search-list-input-bind">فیفا</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -36,7 +49,7 @@
     </header>
     <!-- End Header -->
     <!-- Start Overlay -->
-    <div class="overlay overlay--is-active"></div>
+    <div class="overlay"></div>
     <!-- End Overlay -->
     <!-- Start Swiper -->
     <section class="recommendation">
