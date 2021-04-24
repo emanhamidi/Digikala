@@ -62,6 +62,8 @@ a {
  */
 /* End Header */
 /* Start Main */
+
+/* slider styles */
 .slider-arman {
   position: relative;
   display: flex;
@@ -266,6 +268,9 @@ a {
 .new-price__currency {
   font-size: 12px;
 }
+
+/* End slider styles */
+
 /* End Main */
 /* Start Footer */
 /* 
