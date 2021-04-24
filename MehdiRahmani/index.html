@@ -5,15 +5,55 @@
     <meta charset="utf-8">
     <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./static/vendor/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./static/assets/css/style.css" />
-    <link rel="stylesheet" href="./static/vendor/swiper/swiper-bundle.min.css">
+
   </head>
 
   <body>
-
+    <!-- Start Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__right-side">
+            <div class="header__logo">
+              <a class="header__logo-link" href="#">
+                <img class="header__logo-img" src="./static/assets/images/logo.svg" alt="دیجیکالا">
+              </a>
+            </div>
+            <div class="header__search">
+              <div class="header__search-background ion ion-android-search">
+                <span class="header__search-reset ion ion-android-cancel"></span>
+                <input class="header__search-input" type="text" id="search" name="search"
+                  placeholder="جستجو در دیجی‌کالا" autocomplete="off">
+                <div class="header__search-result">
+                  <ul class="header__search-list">
+                    <li class="header__search-list-item">
+                      <a href="#">
+                        <span class="header__search-list-icon ion ion-android-search">
+                        </span>
+                        <span class="header__search-list-text">
+                          همه کالا‌های برند
+                        </span>
+                        <span class="header__search-list-input-bind">فیفا</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__left-side"></div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Overlay -->
+    <div class="overlay"></div>
+    <!-- End Overlay -->
     <!-- Start Swiper -->
-    <div class="container">
-      <section class="recommendation">
+    <section class="recommendation">
+      <div class="container">
         <div class="headline">
           <span>مهدی رحمانی</span>
         </div>
@@ -21,9 +61,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/takht.jpg"
-                  alt="تخت خوابت را مرتب کن">
+                <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -47,9 +85,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/fana.jpg"
-                  alt="خودت را به فنا نده">
+                <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -73,9 +109,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/takht.jpg"
-                  alt="تخت خوابت را مرتب کن">
+                <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -99,9 +133,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/fana.jpg"
-                  alt="خودت را به فنا نده">
+                <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -125,9 +157,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/takht.jpg"
-                  alt="تخت خوابت را مرتب کن">
+                <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -151,9 +181,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/fana.jpg"
-                  alt="خودت را به فنا نده">
+                <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -177,9 +205,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/takht.jpg"
-                  alt="تخت خوابت را مرتب کن">
+                <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -203,9 +229,7 @@
             </div>
             <div class="swiper-slide">
               <a href="#" class="swiper-slide__img">
-                <img
-                  src="./static/assets/images/fana.jpg"
-                  alt="خودت را به فنا نده">
+                <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
               </a>
               <div class="swiper-slide__title">
                 <a href=#>
@@ -231,7 +255,7 @@
         </div>
         <div class="swiper-button-next swiper3-next"></div>
         <div class="swiper-button-prev swiper3-prev"></div>
-      </section>
+    </section>
     </div>
     <script src="./static/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="./static/assets/js/script.js"></script>
