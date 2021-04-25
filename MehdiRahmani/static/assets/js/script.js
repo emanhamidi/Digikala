@@ -62,4 +62,28 @@ overlay.addEventListener("click", hideSearchResult);
 
 // end search
 
+// start user profile
+
+const userProfileBtn = 
+      document.querySelectorAll('.header__user-profile-toggle-dropdown')[0];
+let showUserProfileDropdown = false;
+
+function toggleUserProfileDropdown() {
+  const userProfileIcon  = document.querySelectorAll('.header__user-profile-icon')[0];
+  const userProfileDropdown  = document.querySelectorAll('.header__user-profile-dropdown')[0];
+
+  if (showUserProfileDropdown) {
+    userProfileIcon.classList.remove('header__user-profile-icon--is-active');
+    userProfileDropdown.classList.remove('header__user-profile-dropdown--show');
+    showUserProfileDropdown = false;
+  } else {
+    userProfileIcon.classList.add('header__user-profile-icon--is-active');
+    userProfileDropdown.classList.add('header__user-profile-dropdown--show');
+    showUserProfileDropdown = true;
+  }
+}
+
+userProfileBtn.addEventListener('click', toggleUserProfileDropdown);
+// end user profile
+
 // end header
