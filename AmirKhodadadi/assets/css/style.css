@@ -48,13 +48,35 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+    font-family: IRYEKAN!important;
+}
+select, input, textarea {
+    font-family: IRYEKAN;
 }
 /* Start Header */
-/* 
-....
-....
-....
- */
+.c-header{
+    background: #fff;
+    box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+}
+.c-header__logo{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 24px;
+    margin-right: 8px;
+    position: relative;
+    min-height: 10px;
+    width: 100%;
+    max-width: 110px;
+    max-height: 100%;
+}
+.c-header__logo-img{
+    height: 30px;
+    display: flex;
+    color: #fff;
+    background-size: contain;
+    text-align: right;
+}
+
 /* End Header */
 /* Start Main */
 /* start slider amirkhodadadi */
