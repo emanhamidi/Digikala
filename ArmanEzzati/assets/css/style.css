@@ -58,7 +58,7 @@ a {
 .header {
   background: #fff;
   box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
-  position: relative;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
