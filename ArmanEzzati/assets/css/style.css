@@ -55,20 +55,73 @@ a {
 }
 
 /* Start Header */
-/* 
-....
-....
-....
- */
+.header {
+  background: #fff;
+  box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__row {
+  display: flex;
+  padding: 12px 0;
+}
+
+.header__right-side {
+  display: flex;
+  align-items: center;
+  flex-grow: 7;
+}
+
+.header__logo {
+  width: 10%;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+.header__logo-link {
+  display: flex;
+}
+
+.header__search {
+  width: 100%;
+}
+
+.header__search .search-input {
+  width: 65%;
+  height: 100%;
+  background-color: #f0f0f1;
+  color: #474747;
+  font-family: IRYEKAN;
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 45px 14px 10px;
+}
+
+.header__left-side {
+  display: flex;
+  flex-grow: 3;
+}
+
 /* End Header */
 /* Start Main */
+
+/* slider styles */
 .slider-arman {
   position: relative;
   display: flex;
   flex-direction: column;
   font-family: IRYEKAN;
-  margin: 10px;
-  padding-bottom: 5px;
+  margin: 16px 0 0;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
@@ -80,9 +133,9 @@ a {
 }
 
 .slider-arman__header .name {
-  padding: 5px;
+  padding: 8px 0;
   font-size: 18px;
-  color: #7c7c7c;
+  color: #515151;
 }
 
 .slider-arman__header .lines {
@@ -266,6 +319,9 @@ a {
 .new-price__currency {
   font-size: 12px;
 }
+
+/* End slider styles */
+
 /* End Main */
 /* Start Footer */
 /* 
