@@ -109,9 +109,48 @@ a {
 
 .header__left-side {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   flex-grow: 3;
 }
 
+.header__btn-container {
+  position: relative;
+  padding: 0 12px;
+}
+
+.header__btn-login {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e2;
+  font-family: IRYEKAN;
+  font-size: 12px;
+  color: #616161;
+}
+
+.fa-user {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.header__btn-cart-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: #e0e0e2;
+  width: 1px;
+  height: 24px;
+  transform: translateY(-50%);
+}
+
+.fa-shopping-cart {
+  font-size: 20px;
+  color: #424750;
+}
 /* End Header */
 /* Start Main */
 
