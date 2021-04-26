@@ -31,6 +31,7 @@ let showUserProfileDropdown = false;
 
 
 function showSearchResult(event) {
+  event.stopPropagation();
   const searchResult = document.querySelectorAll(".header__search-result")[0];
   const searchInput = document.querySelectorAll(".header__search-input")[0];
   const inputValue = event.target.value;
@@ -71,7 +72,8 @@ searchResetBtn.addEventListener("click", serachInputReset);
 const userProfileBtn = 
       document.querySelectorAll('.header__user-profile-toggle-dropdown')[0];
 
-function toggleUserProfileDropdown() {
+function toggleUserProfileDropdown(event) {
+  event.stopPropagation();
 
   if (showUserProfileDropdown) {
     userProfileIcon.classList.remove('header__user-profile-icon--is-active');
@@ -90,4 +92,5 @@ userProfileBtn.addEventListener('click', toggleUserProfileDropdown);
 
 
 overlay.addEventListener("click", hideDropdown);
+header.addEventListener("click", hideDropdown);
 // end header
