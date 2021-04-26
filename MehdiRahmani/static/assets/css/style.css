@@ -83,8 +83,17 @@ select {
 /* Start Header */
 .header {
   background-color: #ffffff;
+  z-index: 16;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  background: #fff;
   position: relative;
-  z-index: 3;
+  -webkit-box-shadow: rgba(0, 0, 0, .04) 0 7px 8px 0;
+  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, .04);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .header__row {
@@ -102,12 +111,11 @@ select {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-grow: 7;
+  flex-grow: 1;
   align-items: center;
 }
 
 .header__logo {
-  width: 10%;
   margin-left: 24px;
   margin-right: 8px;
 }
@@ -249,7 +257,6 @@ select {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-grow: 3;
   justify-content: flex-end;
 }
 
@@ -541,6 +548,169 @@ select {
   margin-left: 11px;
 }
 
+/* Start Navbar */
+.navbar {
+  background-color: #fff;
+  position: absolute;
+  -webkit-box-shadow: rgba(0, 0, 0, .04) 0 7px 8px 0;
+  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, .04);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  left: 0;
+  top: 100%;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+}
+
+.navbar__row {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: #fff;
+  color: #616161;
+}
+
+.navbar__category-list {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+.navbar__category-item {
+  font-size: 11px;
+  line-height: 30px;
+}
+
+.navbar__category-list-sub-highlight {
+  transform: scale(0);
+}
+
+.navbar__category-item:nth-child(2) {
+  margin-left: 25px;
+}
+
+.navbar__category-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  padding: 7px 8px 8px;
+  color: #616161;
+  cursor: default;
+  width: 100%;
+}
+
+.navbar__category-main::before {
+  content: '\f20d';
+  font-family: 'Ionicons';
+  font-size: 18px;
+  margin-left: 5px;
+  color: #424750;
+}
+
+.navbar__category-main::after {
+  content: "";
+  position: relative;
+  height: 20px;
+  width: 1px;
+  background-color: #f0f0f1;
+  right: 30px;
+}
+
+.navbar__category-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  color: #616161;
+  cursor: pointer;
+  line-height: 30px;
+  padding: 7px 12px 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navbar__category-link::before {
+  font-size: 18px;
+  margin-left: 5px;
+  color: #a1a3a8;
+}
+
+.navbar__category-link--plus::before {
+  color: #d60084;
+}
+
+.navbar__category-list-sub-highlight {
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s all;
+}
+
+.navbar__category-list-sub-highlight div {
+  width: 100%;
+  height: 2px;
+  background: #ef5661;
+  position: absolute;
+  bottom: 0;
+}
+
+.navbar__category-location::after {
+  content: '';
+}
+
+.navbar__choose-location span::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 11px;
+  border: 1px solid #fff;
+  background: #ef394e;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
+
+.navbar__choose-location span::after {
+  content: '\f455';
+  font-family: 'Ionicons';
+  font-size: 18px;
+  margin-right: 8px;
+  color: #424750;
+  vertical-align: top;
+}
+
+/* End Navbar */
 
 /* End Header */
 
@@ -550,7 +720,7 @@ select {
   background: rgba(74, 74, 74, .43);
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 15;
   opacity: 0;
   top: 0;
   right: 0;
@@ -565,8 +735,18 @@ select {
 
 /* End Overlay */
 
+/* Start Main */
+main {
+  margin-top: 140px;
+}
+
+/* End Main */
+
 /* Start Swiper */
 .container {
+  position: relative;
+  z-index: 14;
+  background-color: #ffffff;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
