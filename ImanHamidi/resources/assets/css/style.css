@@ -1,3 +1,4 @@
+@import "../../vendor/icons/ionicon/css/ionicons.min.css";
 @import '../../vendor/fonts/fonts.css';
 html {
   box-sizing: border-box;
@@ -38,6 +39,7 @@ body {
   line-height: 30px;
   background-color: #f5f5f5;
   direction: rtl;
+  font-family: IRYEKAN;
 }
 
 p, h1, h2, h3, h4, ul {
@@ -55,11 +57,160 @@ a {
 }
 
 /* Start Header */
-/*
-....
-....
-....
- */
+
+nav {
+  color: #757575;
+  background-color: white;
+  height: 50px;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav ul {
+  float: right;
+  /* margin-right: 30px; */
+  position: relative;
+}
+
+nav ul li {
+  float: left;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  width: 100%;
+  color: #616161;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+nav ul li a:hover {
+  /* border-bottom: 1px solid red; */
+}
+
+nav ul ul {
+  position: absolute;
+  top: 55px;
+  right: -10px;
+  width: 300px;
+  text-align: right;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  border-left: 1px solid #e6e6e6;
+}
+
+nav ul li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li a:hover {
+  color: #E7334C;
+  background-color: rgb(248, 248, 248);
+  border-top:1px solid  rgb(248, 248, 248);
+  width: 350px;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  float: none;
+  display: list-item;
+}
+
+nav ul ul li a{
+  padding: 5px;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -55px;
+  right: 310px;
+  width: 1100px;
+  background-color: white;
+}
+
+.navBarContainer {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 1000vh;
+  height: 140px;
+  padding: 2rem;
+
+}
+
+.navBarContainer__row{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 1550px;
+}
+
+.navBarContainer__right-side{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navBarContainer__searchBox{
+  background-color: #f0f0f1;
+  border-radius: 15px;
+  padding-right: 15px;
+}
+
+.fa-search{
+  color:rgb(153, 151, 151);
+}
+
+input::placeholder{
+  color:rgb(153, 151, 151);
+  font-size: 10px;
+}
+
+input{
+  font-size: 18px;
+  color: #000;
+}
+
+.Search {
+  width: 700px;
+  height: 50px;
+  color: rgb(110, 13, 13);
+  background-color: #f0f0f1;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+.navBarContainer__left-side{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.LoginBox {
+  width: 200px;
+  height: 50px;
+  padding: 1rem;
+  border: 1px solid #f0f0f1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* End Header */
 /* Start Main */
 
