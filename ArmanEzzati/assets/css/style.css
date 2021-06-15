@@ -85,7 +85,7 @@ a {
 
 .header__logo {
   width: 10%;
-  margin-left: 36px;
+  margin-left: 58px;
   margin-right: 8px;
 }
 
@@ -94,11 +94,12 @@ a {
 }
 
 .header__search {
-  width: 100%;
+  position: relative;
+  width: 70%;
 }
 
 .header__search .search-input {
-  width: 65%;
+  width: 100%;
   height: 100%;
   background-color: #f0f0f1;
   color: #474747;
@@ -109,6 +110,17 @@ a {
   padding: 14px 45px 14px 10px;
 }
 
+.header__search:before {
+  font-family: FontAwesome;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a1a3a8;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+}
 .header__left-side {
   display: flex;
   align-items: center;
