@@ -12,3 +12,7 @@
      font-weight: bold;
      font-style: normal;
  }
+ @font-face {
+      font-family: FontAwesome;
+      src: url('./FontAwesome.Pro.5.15.2.Web/webfonts/fa-regular-400.ttf');
+ }
