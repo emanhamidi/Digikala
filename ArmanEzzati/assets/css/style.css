@@ -222,12 +222,7 @@ a {
   padding: 7px 8px 8px;
 }
 
-.navbar__category-item-main {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__category-item-main::after {
+.navbar__category-item--main::after {
   content: "";
   position: relative;
   right: 12px;
