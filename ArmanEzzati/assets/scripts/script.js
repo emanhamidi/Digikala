@@ -17,3 +17,22 @@ navItems.forEach(navItem => {
     navItem.addEventListener("mouseover", highlightNavItems);
     navItem.addEventListener("mouseout", highlightNavItems);
 });
+
+let navbar = document.querySelector(".navbar");
+
+document.addEventListener("scroll", toggleNavBar);
+
+let prevScrollPos = window.pageYOffset;
+
+function toggleNavBar(event) {
+    let currentScrollPos = window.pageYOffset;
+
+    if (currentScrollPos > prevScrollPos) {
+        navbar.classList.add("navbar--hidden");
+    }
+    else {
+        navbar.classList.remove("navbar--hidden");
+    }
+
+    prevScrollPos = currentScrollPos;
+}
