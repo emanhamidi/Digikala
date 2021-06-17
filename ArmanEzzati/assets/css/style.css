@@ -265,7 +265,13 @@ a {
   border-left: 1px solid #f0f0f1;
 }
 
-.inner-category-item__link:hover {
+.inner-category-item {
+  color: #616161;
+  padding: 14px 8px;
+  cursor: pointer;
+}
+
+.inner-category-item:hover {
   color: #ef394e;
   padding: 13px 8px;
   background-color: #f9f9f9;
@@ -276,9 +282,6 @@ a {
 .inner-category-item__link {
   display: flex;
   align-items: center;
-  color: #616161;
-  padding: 14px 8px;
-  cursor: pointer;
 }
 /* End Header */
 /* Start Main */
